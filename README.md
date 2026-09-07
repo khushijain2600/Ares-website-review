@@ -7,31 +7,22 @@ Similarly, in the Workshops section, more information could be provided about wh
 
 Overall, the website is already good, and I would focus mainly on adding more information by the "Read more" options rather than making major changes.
 
-# ===== Robot Sensor
+# ===== Robot Sensor =====
 OBSTACLE_DISTANCE = 20
 
-while True:
-    #Sense
-    distance = sensor_reading()
+ while True:
+ # sense
+ distance = sensor_reading()
 
-   # Decide
-   if distance > OBSTACLE_DISTANCE:
+ #decide
+ if distance > OBSTACLE_DISTANCE:
+  left_motor_forward()
+  right_motor_forward()
 
-   # Act: move forward
- left_motor_forward()
- right_motor_forward()
-
- else:
-
-  # Act: stop first
+  else:
   left_motor_stop()
   right_motor_stop()
 
-  # Turn
+  #Turn
   left_motor_forward()
-  right_motor_backward()
-  
-
-        # Then turn
-        left_motor_forward()
-        right_motor_backward()
+  right_motor_bacward()
