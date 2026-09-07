@@ -6,3 +6,32 @@ However, I think a few sections could be made more informative. In the Projects 
 Similarly, in the Workshops section, more information could be provided about what was conducted during the workshops, what activities were performed, and what participants learned.
 
 Overall, the website is already good, and I would focus mainly on adding more information by the "Read more" options rather than making major changes.
+
+# ===== Robot Sensor
+OBSTACLE_DISTANCE = 20
+
+while True:
+    #Sense
+    distance = sensor_reading()
+
+   # Decide
+   if distance > OBSTACLE_DISTANCE:
+
+   # Act: move forward
+   left_motor_forward()
+  right_motor_forward()
+
+ else:
+
+  # Act: stop first
+  left_motor_stop()
+  right_motor_stop()
+
+  # Turn
+  left_motor_forward()
+  right_motor_backward()
+  
+
+        # Then turn
+        left_motor_forward()
+        right_motor_backward()
