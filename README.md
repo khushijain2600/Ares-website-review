@@ -25,4 +25,4 @@ OBSTACLE_DISTANCE = 20
 
   #Turn
   left_motor_forward()
-  right_motor_bacward()
+  right_motor_backward()
