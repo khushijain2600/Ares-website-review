@@ -14,7 +14,7 @@ OBSTACLE_DISTANCE = 20
  # sense
  distance = sensor_reading()
 
- #decide
+ # decide
  if distance > OBSTACLE_DISTANCE:
   left_motor_forward()
   right_motor_forward()
@@ -23,6 +23,6 @@ OBSTACLE_DISTANCE = 20
   left_motor_stop()
   right_motor_stop()
 
-  #Turn
+  # Turn
   left_motor_forward()
   right_motor_backward()
