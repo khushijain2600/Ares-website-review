@@ -18,8 +18,8 @@ while True:
    if distance > OBSTACLE_DISTANCE:
 
    # Act: move forward
-   left_motor_forward()
-  right_motor_forward()
+ left_motor_forward()
+ right_motor_forward()
 
  else:
 
